@@ -1,0 +1,2 @@
+1. python3 -m pip install jupyter
+2. in browser: localhost:8888
