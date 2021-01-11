@@ -1,2 +1,7 @@
-1. python3 -m pip install jupyter
-2. in browser: localhost:8888
+using quandl market data -may need new accoutn
+
+1.  pip install jupyter OR python -m pip install jupyter
+2. python -m notebook OR jupyter notebook (browser: localhost:8888)
+3. NEW->PYTHON3
+4. pip install Quandl
+5. import quandl (TEST)
