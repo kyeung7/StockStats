@@ -1,4 +1,4 @@
-using quandl market data -may need new accoutn
+using quandl market data -may need new accoutn AND VERIFY EMAIL
 
 1.  pip install jupyter OR python -m pip install jupyter
 2. python -m notebook OR jupyter notebook (browser: localhost:8888)
