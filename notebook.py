@@ -87,6 +87,8 @@ import quandl
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import datetime
+
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
 from sklearn.linear_model import LinearRegression
@@ -134,5 +136,27 @@ confidence = clf.score(X_test, y_test) #test model linearlty correlation
 forecast_predicted = clf.predict(X_forecast) #predicting y values on the x days forecasted
 #print(forecast_predicted)
 #plt.plot(X, y) #scatterplot of data, model will find lobf
+
+#create array of dates
+dates = pd.date_range(start = "2018-03-28", end="2018-04-26")
+#print(dates)
+
+plt.plot(dates, forecast_predicted, color = "y")
+df["Adj. Close"].plot(color = "g")
+plt.xlim(xmin = datetime.date(2017, 4, 26)) #shift start date position for graph 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
