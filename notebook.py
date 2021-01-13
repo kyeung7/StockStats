@@ -119,16 +119,16 @@ X_forecast = X[-forecast:] #array of days of forecast, no corresponding y val
 X = X[:-forecast] #array of days prior
 
 # y array have same size as x array
-y = np.array(dif["Prediction"])
+y = np.array(df["Prediction"])
 y = y[:-forecast] #contains all but last 30 days
 
 # create training variables
-X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0,2) # 20% of data to go into splilt
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2) # 20% of data to go into splilt
 
 #apply and fit linear regression model
 clf = LinearRegression() #estimator instance, classifier
 clf.fit(X_train, y_train) #create model to fit data
 
-
+plt.plot(X, y)
 
 
