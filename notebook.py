@@ -106,7 +106,7 @@ plt.legend(loc = "upper left")
 plt.show()
 
 
-forecast = 30
+forecast = 30 #days, default 30
 df["Prediction"] = df[["Adj. Close"]].shift(-forecast)
 
 X = np.array(df.drop(["Prediction"], 1)) #dropping coloumn
