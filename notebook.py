@@ -1,3 +1,13 @@
+#Part 1 - print dataset
+import quandl
+import pandas as pd
+
+quandl.ApiConfig.api_key = 'LsYwP9quyK2ezGbiNKGq'
+
+df = quandl.get("WIKI/AAPL")
+df.head()
+
+#Part 1 - print dataset
 # Imports used
 import quandl
 import pandas as pd
@@ -9,10 +19,13 @@ from sklearn.linear_model import LinearRegression
 
 # API setup
 quandl.ApiConfig.api_key = 'LsYwP9quyK2ezGbiNKGq'
-df = quandl.get("WIKI/AAPL") #choose stock with linear pattern
+
+# choosing stock with linear pattern and showing data
+df = quandl.get("WIKI/AAPL")
 df.head()
  
-df = df[['Adj. CLose']]
+# SHOW APPL
+df = df['Adj. CLose']
 df.head()
 
 df['Adj. Close'].plot(figsize=(15, 6), color='g')
