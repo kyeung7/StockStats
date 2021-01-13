@@ -129,6 +129,10 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2) # 20%
 clf = LinearRegression() #estimator instance, classifier
 clf.fit(X_train, y_train) #create model to fit data
 
-plt.plot(X, y)
+confidence = clf.score(X_test, y_test) #test model linearlty correlation
+
+forecast_predicted = clf.predict(X_forecast) #predicting y values on the x days forecasted
+#print(forecast_predicted)
+#plt.plot(X, y) #scatterplot of data, model will find lobf
 
 
