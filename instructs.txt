@@ -8,5 +8,6 @@ using quandl market data -may need new accoutn AND VERIFY EMAIL
 6. pip install matplotlib
 7. pip install numpy
 8. pip install pandas
-9. pip install sklearn
-10. upgrade pip if needed: python -m pip install --user --upgrade pip
+9. pip install sklearn AND pip install scikit-learn
+10. upgrade pip if needed: python -m pip install --user --upgrade pip, or if enviroment error for non existing file/folder, change registory value:
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem -> LongPathsEnabled (CHANGE TO 1 from 0)
