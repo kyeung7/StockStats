@@ -1,5 +1,4 @@
-#Part 5 - splitting data into training data
-# Imports used
+
 import quandl
 import pandas as pd
 import numpy as np
@@ -61,19 +60,5 @@ dates = pd.date_range(start = "2018-03-28", end="2018-04-26")
 plt.plot(dates, forecast_predicted, color = "y")
 df["Adj. Close"].plot(color = "g")
 plt.xlim(xmin = datetime.date(2017, 4, 26)) #shift start date position for graph 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
